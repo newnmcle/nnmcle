@@ -1,6 +1,6 @@
 <?php 
 
-
+echo "<h1> success";
 
 $pid = $_GET['oid'];
 $red = $_GET['refId'];
@@ -23,11 +23,7 @@ $data =[
     $response = curl_exec($curl);
     echo $response;
     curl_close($curl);
-    if(strpos($response, "Success") !== false){
-        header("Location: https://newnmcle.blogspot.com/p/take-exam.html");
-    } else{
-        header("Location: https://newnmcle.blogspot.com/");
-    }
+    
     
 
 ?>
